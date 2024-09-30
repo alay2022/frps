@@ -6,11 +6,8 @@ quicBindPort = 5010
 vhostHTTPPort = 80
 vhostHTTPSPort = 443
 
-transport.maxPoolCount = 2000
-transport.tcpMux = true
-transport.tcpMuxKeepaliveInterval = 60
-transport.tcpKeepalive = 7200
-transport.tls.force = false
+auth.method = "token"
+auth.token = "12345678"
 
 webServer.addr = "0.0.0.0"
 webServer.port = 5011
@@ -18,17 +15,16 @@ webServer.user = "admin"
 webServer.password = "admin"
 webServer.pprofEnable = false
 
+transport.maxPoolCount = 2000
+transport.tcpMux = true
+transport.tcpMuxKeepaliveInterval = 60
+transport.tcpKeepalive = 7200
+transport.tls.force = false
+
 log.to = "./frps.log"
 log.level = "info"
 log.maxDays = 3
 log.disablePrintColor = false
-
-auth.method = "token"
-auth.token = "12345678"
-
-allowPorts = [
-  { start = 10001, end = 50000 }
-]
 
 maxPortsPerClient = 8
 udpPacketSize = 1500
