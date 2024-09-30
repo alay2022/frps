@@ -1,6 +1,6 @@
 bindAddr = "0.0.0.0"
 bindPort = 55010
-#kcpBindPort = 7000
+#kcpBindPort = 55010
 quicBindPort = 55010
 
 vhostHTTPPort = 8880
