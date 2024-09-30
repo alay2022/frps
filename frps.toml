@@ -1,10 +1,10 @@
 bindAddr = "0.0.0.0"
-bindPort = 55010
-#kcpBindPort = 55010
-quicBindPort = 55010
+bindPort = 5010
+#kcpBindPort = 5010
+quicBindPort = 5010
 
-vhostHTTPPort = 8880
-vhostHTTPSPort = 8443
+vhostHTTPPort = 80
+vhostHTTPSPort = 443
 
 transport.maxPoolCount = 2000
 transport.tcpMux = true
@@ -13,7 +13,7 @@ transport.tcpKeepalive = 7200
 transport.tls.force = false
 
 webServer.addr = "0.0.0.0"
-webServer.port = 7500
+webServer.port = 5011
 webServer.user = "admin"
 webServer.password = "admin"
 webServer.pprofEnable = false
