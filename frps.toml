@@ -1,10 +1,10 @@
 bindAddr = "0.0.0.0"
-bindPort = 7000
+bindPort = 55010
 #kcpBindPort = 7000
-quicBindPort = 7000
+quicBindPort = 55010
 
-vhostHTTPPort = 80
-vhostHTTPSPort = 443
+vhostHTTPPort = 8880
+vhostHTTPSPort = 8443
 
 transport.maxPoolCount = 2000
 transport.tcpMux = true
